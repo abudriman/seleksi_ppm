@@ -1,0 +1,4 @@
+SELECT kabupaten_kota.id AS id_kabupaten_kota, kabupaten_kota.name AS kabupaten_kota, provinsi.name AS provinsi FROM desa 
+JOIN kecamatan ON desa.district_id = kecamatan.id 
+JOIN kabupaten_kota ON kecamatan.regency_id = kabupaten_kota.id
+JOIN provinsi ON kabupaten_kota.province_id = provinsi.id;

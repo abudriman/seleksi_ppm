@@ -1,0 +1,3 @@
+CREATE DATABASE arif_budiman_db;
+USE arif_budiman_db;
+SOURCE indonesia.sql;

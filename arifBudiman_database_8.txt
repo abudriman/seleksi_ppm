@@ -1,0 +1,6 @@
+/////di gambar yang ada di soal isinya id kabupaten_kota(4 digit) tapi headernya id_kecamatan(7 digit) (?)
+
+SELECT kabupaten_kota.id AS id_kecamatan, kecamatan.name AS kecamatan, provinsi.name AS provinsi FROM desa 
+JOIN kecamatan ON desa.district_id = kecamatan.id 
+JOIN kabupaten_kota ON kecamatan.regency_id = kabupaten_kota.id
+JOIN provinsi ON kabupaten_kota.province_id = provinsi.id;

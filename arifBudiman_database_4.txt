@@ -1,0 +1,1 @@
+RENAME TABLE `regencies` TO `kabupaten_kota`;

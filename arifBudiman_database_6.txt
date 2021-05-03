@@ -1,0 +1,1 @@
+RENAME TABLE `villages` TO `desa`;
